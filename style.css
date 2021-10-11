@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+    font-family: sans-serif;
+}
+button{
+    width: 30%;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 0px;
+}
+.center-txt{
+    text-align: center;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    width: 50%;
+    flex: 0 0 auto;
+}
+.col-12{
+    width: 100%;
+    flex: 0 0 auto;
+}
+#elevator{
+    position: relative;
+}
+.floor{
+    height: 50px;
+    border-right: 5px solid blue;
+    border-top: 5px solid blue;
+}
+#shaft{
+    width: 200px;
+    background-color: darkred;
+    height: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: -100px;
+    transition: all 500ms ease-in-out;
+}
